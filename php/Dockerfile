@@ -10,7 +10,7 @@ RUN apt-get update \
   && apt-get install -y libzip-dev zlib1g-dev unzip vim zip libpq-dev \
   # Dockerコンテナ内でIlluminate\Http\UploadedFileクラスを利用するには PHP GD が必要
   libpng-dev libjpeg-dev \
-  && pecl install xdebug-beta \
+  && pecl install xdebug \
   && docker-php-ext-enable xdebug \
   # Dockerコンテナ内でIlluminate\Http\UploadedFileクラスを利用するには PHP GD が必要
   && docker-php-ext-configure gd --with-png-dir=/usr/include --with-jpeg-dir=/usr/include \
