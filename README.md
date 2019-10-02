@@ -6,9 +6,13 @@
 $ cp .env.example .env
 $ docker-compose build
 $ docker-compose up -d
+# Create project (latest version)
 $ docker-compose exec php laravel new example_project
 # or
 # git clone git@github.com:username/example-laravel ./project/example-laravel
+
+# Specify version
+# docker-compose exec php composer create-project laravel/laravel="5.8.*" example_project
 ```
 
 2. Edit .env file
