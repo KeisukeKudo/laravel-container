@@ -49,11 +49,5 @@ $ docker-compose up -d
 - Set `IDE key (session id)` to `"XDEBUGKEY"`  
 - Set `File > Settings > Languages & Frameworks > PHP > Debug > Xdebug > Debug port` to `9001`
 
-Note: If you are using Hyper-v, change `xdebug.ini` as follows:
-```diff
-- xdebug.remote_connect_back=1
-+ xdebug.remote_connect_back=0
-```
-
 Please enjoy laravel!!  
 ![](https://media.giphy.com/media/tIeCLkB8geYtW/giphy.gif)
