@@ -4,8 +4,7 @@
 
 ```
 $ cp .env.example .env
-$ docker-compose build
-$ docker-compose up -d
+$ docker-compose up -d --build
 # Create project (latest version)
 $ docker-compose exec php laravel new example_project
 # or
